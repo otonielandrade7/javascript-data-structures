@@ -50,7 +50,9 @@ class HashTable {
   getAllKeys() {
     const keys = [];
     this.data.forEach((element) => {
-      keys.push(element[0][0]);
+      element.forEach((nestedElement) => {
+        keys.push(nestedElement[0]);
+      });
     });
     return keys;
   }
