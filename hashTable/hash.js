@@ -59,6 +59,17 @@ class HashTable {
 }
 
 const myHashTable = new HashTable(50);
+//adding data to myHashTable
 myHashTable.set("Otoniel", 1999);
 myHashTable.set("Roberto", 1998);
 myHashTable.set("Gustavo", 1997);
+
+//get data from specific key
+myHashTable.get("Otoniel"); //returns 1999
+
+//remove specific data from myHashTable
+myHashTable.delete("Otoniel"); //returns this.data
+
+
+//get all keys from myHashTable
+myHashTable.getAllKeys(); //returns all keys into array like:  ["Roberto", "Gustavo"]
